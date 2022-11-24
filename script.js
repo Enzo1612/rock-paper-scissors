@@ -70,7 +70,7 @@ div.appendChild(gameScore);
         }
         else if (computerChoice == "scissors" && playerChoice == "rock"){
             ++playerScore;
-            roundResult.textContent = "You win! You picked scissors and he picked rock..."
+            roundResult.textContent = "You win! You picked rock and he picked scissors..."
         }
         else if (computerChoice == "rock" && playerChoice == "paper"){
             ++playerScore;
