@@ -95,8 +95,7 @@ div.appendChild(gameScore);
         //Loop repeating 5 times in order to play 5 round of rock paper scissors//
         function playRound(){
                 if (computerScore !== 3 && playerScore !==3) {
-                    rockPaperScissors(),`
-                    `,score();
+                    score();
                 }
                 if (playerScore == 3) {
                     gameScore.textContent = "Well played, you won!!!";
@@ -108,6 +107,4 @@ div.appendChild(gameScore);
                     computerScore = 0
                     playerScore = 0
                 }
-            }
-
-    ////playRound()
+        }
