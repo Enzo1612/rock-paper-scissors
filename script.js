@@ -16,22 +16,25 @@ function score () {
     gameScore.textContent = "Player win: " + playerScore + " Computer win: " + computerScore;
 }
 //create 3 buttons for each choices//
-
+//container
+let container = document.createElement('div')
+container.classList.add('container')
+document.body.append(container)
 //rock//
 let rock = document.createElement('button')
 rock.textContent = 'rock'
 rock.classList.add('rock', 'choiceButton');
-document.body.appendChild(rock);
+container.appendChild(rock);
 //paper//
 let paper = document.createElement('button')
 paper.textContent = 'paper'
 paper.classList.add('paper', 'choiceButton');
-document.body.appendChild(paper);
+container.appendChild(paper);
 //scissors//
 let scissors = document.createElement('button')
 scissors.textContent = 'scissors'
 scissors.classList.add('scissors', 'choiceButton');
-document.body.appendChild(scissors);
+container.appendChild(scissors);
 //addEventListener to buttons//
 const choiceButtons = document.querySelectorAll('.choiceButton');
 choiceButtons.forEach(button => button.addEventListener('click', () => {
